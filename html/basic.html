@@ -1,0 +1,59 @@
+<!-- HTML Basic reference sheet
+Includes references and basics learned from tutorials.
+Created by Steven Kosanke-->
+
+<!--Header is required, everything within <head> will not be displayed on page-->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="basic.css" rel="stylesheet" />
+    <title>Basic HTML Page</title>
+  </head>
+
+  <!--Start of page contents, html is a heirarchial structure-->
+  <body>
+    <!-- 4 heading levels: can be modified to a style within the style.css stylesheet-->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Sub-Heading 3</h3>
+<h4>Sub-Heading 4</h4>
+
+<p>This is one paragraph</p>
+
+<!-- Unordered list = ul, Ordered list = ol -->
+<ul>
+  <li>list1</li>
+  <li>list2</li>
+  <li>list3</li>
+</ul>
+
+<!-- Links -->
+<a href="http://www.google.com">Link to another page</a>
+
+<!-- Forms are used to post data to the server, an older way to exchange data in html is by writing the form contents to a separate page-->
+<form action="/intake_forms" method="post">
+  <!--Forms structured like an unordered list-->
+  <ul>
+    <li>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" value="name"/>
+    </li>
+    <li>
+      <label for="mail">E-mail:</label>
+      <input type="email" id="mail" name="user_email" />
+    </li>
+    <li>
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message">defaultText</textarea>
+    </li>
+    <li class="button">
+      <button type="submit">Send your message</button>
+    </li>
+  </ul>
+</form>
+
+    <img src="images/firefox-icon.png" alt="My test image" />
+  </body>
+</html>
